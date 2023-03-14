@@ -42,8 +42,19 @@
                       <li><a class="dropdown-item" href="http://localhost:8000/page/">{{ 'Page List' |trans}}</a></li>
                       <li><a class="dropdown-item" href="#">{{ 'Another action' |trans}}</a></li>
                     </ul>
-                    {%endif%}
                   </li>
+                  {%endif%}
+                  {%if is_granted('ROLE_ADMIN')%}
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      💫 {{ 'Category' |trans}}
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="http://localhost:8000/category/">{{ 'Category Index' |trans}}</a></li>
+                      <li><a class="dropdown-item" href="http://localhost:8000/category/new">{{ 'Create new category' |trans}}</a></li>
+                    </ul>
+                  </li>
+                  {%endif%}
                 </ul>
                 <ul class="navbar-nav align-right">
                   <li class="nav-item">

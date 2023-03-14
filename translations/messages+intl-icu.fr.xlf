@@ -69,6 +69,18 @@
         <source>Create new</source>
         <target>Créer une nouvelle page</target>
       </trans-unit>
+      <trans-unit id="KSwG8AR" resname="Category">
+        <source>Category</source>
+        <target>Catégorie</target>
+      </trans-unit>
+      <trans-unit id="ExBeWxe" resname="Category Index">
+        <source>Category Index</source>
+        <target>Liste des catégories</target>
+      </trans-unit>
+      <trans-unit id="BERQBOo" resname="Create new category">
+        <source>Create new category</source>
+        <target>Créer une nouvelle catégorie</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
