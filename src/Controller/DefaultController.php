@@ -13,7 +13,7 @@ class DefaultController extends AbstractController
     public function index(TranslatorInterface $translator): Response
     {
         return $this->render('default/index.html.twig', [
-            'controller_name' => $translator->trans('Toto (mais francais de france au sucre sucrée XD)'),
+            'controller_name' => $translator->trans('Toto'),
         ]);
     }
 }

@@ -1,13 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+  <file source-language="fr" target-language="fr" datatype="plaintext" original="file.ext">
     <header>
       <tool tool-id="symfony" tool-name="Symfony"/>
     </header>
     <body>
-      <trans-unit id="zOny9SJ" resname="Toto (mais francais de france au sucre sucrée XD)">
-        <source>Toto (mais francais de france au sucre sucrée XD)</source>
-        <target>Toto (mais francais de france au sucre sucrée XD)</target>
+      <trans-unit id="tBQZ35v" resname="Toto">
+        <source>Toto</source>
+        <target>Toto</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>Accueil</target>
+      </trans-unit>
+      <trans-unit id="M9tMA3i" resname="Create Page">
+        <source>Create Page</source>
+        <target>Créer une page</target>
+      </trans-unit>
+      <trans-unit id="kEbaFq6" resname="Pages">
+        <source>Pages</source>
+        <target>Pages</target>
+      </trans-unit>
+      <trans-unit id="33sRnS3" resname="Page List">
+        <source>Page List</source>
+        <target>Liste des pages</target>
+      </trans-unit>
+      <trans-unit id="wvqtrho" resname="Another action">
+        <source>Another action</source>
+        <target>Autre action</target>
+      </trans-unit>
+      <trans-unit id="ogCBNm6" resname="LogOut">
+        <source>LogOut</source>
+        <target>Se Déconnecter</target>
+      </trans-unit>
+      <trans-unit id="w_j6PjP" resname="LogIn">
+        <source>LogIn</source>
+        <target>Se Connecter</target>
+      </trans-unit>
+      <trans-unit id="e8ajuMI" resname="This friendly message is coming from:">
+        <source>This friendly message is coming from:</source>
+        <target>Ce message amical vient de :</target>
+      </trans-unit>
+      <trans-unit id="Vpskgqa" resname="Password:">
+        <source>Password:</source>
+        <target>Mot de passe:</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ" resname="Register">
+        <source>Register</source>
+        <target>S'inscrire</target>
+      </trans-unit>
+      <trans-unit id="fozSBW2" resname="Title">
+        <source>Title</source>
+        <target>Titre</target>
+      </trans-unit>
+      <trans-unit id="HGMzUJ3" resname="show">
+        <source>show</source>
+        <target>Afficher</target>
+      </trans-unit>
+      <trans-unit id="JiEhxTc" resname="edit">
+        <source>edit</source>
+        <target>Modifier</target>
+      </trans-unit>
+      <trans-unit id="D5lam8." resname="no records found">
+        <source>no records found</source>
+        <target>Aucun enregistrement trouver</target>
+      </trans-unit>
+      <trans-unit id="nz33U6Q" resname="Create new">
+        <source>Create new</source>
+        <target>Créer une nouvelle page</target>
       </trans-unit>
     </body>
   </file>

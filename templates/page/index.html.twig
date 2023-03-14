@@ -9,10 +9,10 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Title</th>
+                <th>{{ 'Title' |trans}}</th>
                 <!--<th>Image</th>-->
                 <!--<th>Text</th>-->
-                <th>actions</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -23,17 +23,17 @@
                 <!--<td>{{ page.image }}</td>-->
                 <!--<td>{{ page.text }}</td>-->
                 <td>
-                    <a class="btn btn-primary" href="{{ path('app_page_show', {'id': page.id}) }}">show</a>
-                    <a class="btn btn-secondary" href="{{ path('app_page_edit', {'id': page.id}) }}">edit</a>
+                    <a class="btn btn-primary" href="{{ path('app_page_show', {'id': page.id}) }}">{{ 'show' |trans}}</a>
+                    <a class="btn btn-secondary" href="{{ path('app_page_edit', {'id': page.id}) }}">{{ 'edit' |trans}}</a>
                 </td>
             </tr>
         {% else %}
             <tr>
-                <td colspan="5">no records found</td>
+                <td colspan="5">{{ 'no records found' |trans}}</td>
             </tr>
         {% endfor %}
         </tbody>
     </table>
 
-    <a class="btn btn-warning" href="{{ path('app_page_new') }}">Create new</a>
+    <a class="btn btn-warning" href="{{ path('app_page_new') }}">{{ 'Create new' |trans}}</a>
 {% endblock %}
