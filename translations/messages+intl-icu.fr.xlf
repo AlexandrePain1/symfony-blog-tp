@@ -81,6 +81,50 @@
         <source>Create new category</source>
         <target>Créer une nouvelle catégorie</target>
       </trans-unit>
+      <trans-unit id="DZO3ehf" resname="Edit Category">
+        <source>Edit Category</source>
+        <target>Modifier la catégorie</target>
+      </trans-unit>
+      <trans-unit id="U0M9PNE" resname="back to list">
+        <source>back to list</source>
+        <target>Retourner à la liste</target>
+      </trans-unit>
+      <trans-unit id="xo05DSt" resname="Category index">
+        <source>Category index</source>
+        <target>Liste des catégories</target>
+      </trans-unit>
+      <trans-unit id="3NHVIj9" resname="Name">
+        <source>Name</source>
+        <target>Nom</target>
+      </trans-unit>
+      <trans-unit id="Ogh45Pp" resname="New Category">
+        <source>New Category</source>
+        <target>Nouvelle Catégorie</target>
+      </trans-unit>
+      <trans-unit id="W6joEsF" resname="Create new Category">
+        <source>Create new Category</source>
+        <target>Créer une nouvelle catégorie</target>
+      </trans-unit>
+      <trans-unit id="ppPC4Vp" resname="Edit Page">
+        <source>Edit Page</source>
+        <target>Modifier la page</target>
+      </trans-unit>
+      <trans-unit id="lXtif3P" resname="Page index">
+        <source>Page index</source>
+        <target>Liste des pages</target>
+      </trans-unit>
+      <trans-unit id="e1RO6Zq" resname="New Page">
+        <source>New Page</source>
+        <target>Nouvelle Page</target>
+      </trans-unit>
+      <trans-unit id=".hnM_8g" resname="Create new Page">
+        <source>Create new Page</source>
+        <target>Créer une nouvelle page</target>
+      </trans-unit>
+      <trans-unit id="FQn1YfJ" resname="Save">
+        <source>Save</source>
+        <target>Sauvegarder</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

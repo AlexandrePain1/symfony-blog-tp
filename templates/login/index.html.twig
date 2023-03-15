@@ -20,6 +20,6 @@
         <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
 
         <button class="btn btn-primary" type="submit">{{ 'LogIn' |trans}}</button>
-        <a class="btn btn-secondary" href="http://localhost:8000/register/">{{ 'Register' |trans}}</a>
+        <a class="btn btn-secondary" href="/register">{{ 'Register' |trans}}</a>
     </form>
 {% endblock %}
