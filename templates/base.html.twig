@@ -44,7 +44,7 @@
                     </ul>
                   </li>
                   {%endif%}
-                  {%if is_granted('ROLE_ADMIN')%}
+                  <!--{%if is_granted('ROLE_ADMIN')%}
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       💫 {{ 'Category' |trans}}
@@ -52,6 +52,17 @@
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="/category">{{ 'Category Index' |trans}}</a></li>
                       <li><a class="dropdown-item" href="/category/new">➕ {{ 'Create new category' |trans}}</a></li>
+                    </ul>
+                  </li>
+                  {%endif%}-->
+                  {%if is_granted('ROLE_ADMIN')%}
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      💫 {{ 'Formations' |trans}}
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/formation">{{ 'Formations Index' |trans}}</a></li>
+                      <li><a class="dropdown-item" href="/formation/new">➕ {{ 'Create new formation' |trans}}</a></li>
                     </ul>
                   </li>
                   {%endif%}

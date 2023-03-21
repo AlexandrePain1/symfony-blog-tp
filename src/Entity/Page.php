@@ -25,12 +25,12 @@ class Page
     #[ORM\Column(type: Types::TEXT, nullable: true)]
     private ?string $text = null;
 
-    #[ORM\ManyToMany(targetEntity: Category::class, inversedBy: 'pages')]
-    private Collection $category;
+    //#[ORM\ManyToMany(targetEntity: Category::class, inversedBy: 'pages')]
+    //private Collection $category;
 
     public function __construct()
     {
-        $this->category = new ArrayCollection();
+        //$this->category = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -74,9 +74,9 @@ class Page
         return $this;
     }
 
-    /**
-     * @return Collection<int, Category>
-     */
+    /*
+      @return Collection<int, Category>
+     
     public function getCategory(): Collection
     {
         return $this->category;
@@ -96,5 +96,5 @@ class Page
         $this->category->removeElement($category);
 
         return $this;
-    }
+    }*/
 }
