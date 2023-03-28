@@ -8,18 +8,16 @@
     <h1>Formation index</h1>
 
     {% for formation in formations %}
-    <div id="accordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h5 class="mb-0">
-              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+    
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                 {{ formation.name }}
-              </button>
-            </h5>
-          </div>
-      
-          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-            <div class="card-body">
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
                 <strong>Prix : {{ formation.price }} €</strong> <br>
                 Capacité : {{ formation.capacity }} <br>
                 Date de début : {{ formation.startDateTime ? formation.startDateTime|date('Y-m-d H:i:s') : '' }}<br>
@@ -28,7 +26,7 @@
             </div>
           </div>
         </div>
-    </div>
+      </div>
     {% else %}
             <tr>
                 <td colspan="8">no records found</td>
