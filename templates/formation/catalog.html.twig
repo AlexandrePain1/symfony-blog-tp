@@ -7,16 +7,18 @@
 
     <h1>Formation index</h1>
 
+    {% set number = 0 %}
     {% for formation in formations %}
-    
+    {% set number = number + 1 %}
+
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{{ number }}" aria-expanded="true" aria-controls="collapse-{{ number }}">
                 {{ formation.name }}
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div id="collapse-{{ number }}" class="accordion-collapse collapse {% if number < 2 %} show {% endif %}" data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <strong>Prix : {{ formation.price }} €</strong> <br>
                 Capacité : {{ formation.capacity }} <br>
