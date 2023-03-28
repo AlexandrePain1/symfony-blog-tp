@@ -40,6 +40,7 @@ class Formation
     #[ORM\Column(nullable: true)]
     private ?\DateTimeImmutable $endDateTime = null;
 
+
     public function getId(): ?int
     {
         return $this->id;

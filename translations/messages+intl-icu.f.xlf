@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="fr" target-language="f" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="tBQZ35v" resname="Toto">
+        <source>Toto</source>
+        <target>__Toto</target>
+      </trans-unit>
+      <trans-unit id="OnhpU4i" resname="Home">
+        <source>Home</source>
+        <target>__Home</target>
+      </trans-unit>
+      <trans-unit id="OQVyYyb" resname="Our formation">
+        <source>Our formation</source>
+        <target>__Our formation</target>
+      </trans-unit>
+      <trans-unit id="M9tMA3i" resname="Create Page">
+        <source>Create Page</source>
+        <target>__Create Page</target>
+      </trans-unit>
+      <trans-unit id="kEbaFq6" resname="Pages">
+        <source>Pages</source>
+        <target>__Pages</target>
+      </trans-unit>
+      <trans-unit id="33sRnS3" resname="Page List">
+        <source>Page List</source>
+        <target>__Page List</target>
+      </trans-unit>
+      <trans-unit id="KSwG8AR" resname="Category">
+        <source>Category</source>
+        <target>__Category</target>
+      </trans-unit>
+      <trans-unit id="ExBeWxe" resname="Category Index">
+        <source>Category Index</source>
+        <target>__Category Index</target>
+      </trans-unit>
+      <trans-unit id="BERQBOo" resname="Create new category">
+        <source>Create new category</source>
+        <target>__Create new category</target>
+      </trans-unit>
+      <trans-unit id="_8e_aDo" resname="Formations">
+        <source>Formations</source>
+        <target>__Formations</target>
+      </trans-unit>
+      <trans-unit id="h.vDjF6" resname="Formations Index">
+        <source>Formations Index</source>
+        <target>__Formations Index</target>
+      </trans-unit>
+      <trans-unit id="wX9gras" resname="Create new formation">
+        <source>Create new formation</source>
+        <target>__Create new formation</target>
+      </trans-unit>
+      <trans-unit id="ogCBNm6" resname="LogOut">
+        <source>LogOut</source>
+        <target>__LogOut</target>
+      </trans-unit>
+      <trans-unit id="w_j6PjP" resname="LogIn">
+        <source>LogIn</source>
+        <target>__LogIn</target>
+      </trans-unit>
+      <trans-unit id="e8ajuMI" resname="This friendly message is coming from:">
+        <source>This friendly message is coming from:</source>
+        <target>__This friendly message is coming from:</target>
+      </trans-unit>
+      <trans-unit id="Vpskgqa" resname="Password:">
+        <source>Password:</source>
+        <target>__Password:</target>
+      </trans-unit>
+      <trans-unit id="u3I07BJ" resname="Register">
+        <source>Register</source>
+        <target>__Register</target>
+      </trans-unit>
+      <trans-unit id="ppPC4Vp" resname="Edit Page">
+        <source>Edit Page</source>
+        <target>__Edit Page</target>
+      </trans-unit>
+      <trans-unit id="U0M9PNE" resname="back to list">
+        <source>back to list</source>
+        <target>__back to list</target>
+      </trans-unit>
+      <trans-unit id="lXtif3P" resname="Page index">
+        <source>Page index</source>
+        <target>__Page index</target>
+      </trans-unit>
+      <trans-unit id="fozSBW2" resname="Title">
+        <source>Title</source>
+        <target>__Title</target>
+      </trans-unit>
+      <trans-unit id="HGMzUJ3" resname="show">
+        <source>show</source>
+        <target>__show</target>
+      </trans-unit>
+      <trans-unit id="JiEhxTc" resname="edit">
+        <source>edit</source>
+        <target>__edit</target>
+      </trans-unit>
+      <trans-unit id="D5lam8." resname="no records found">
+        <source>no records found</source>
+        <target>__no records found</target>
+      </trans-unit>
+      <trans-unit id="nz33U6Q" resname="Create new">
+        <source>Create new</source>
+        <target>__Create new</target>
+      </trans-unit>
+      <trans-unit id="e1RO6Zq" resname="New Page">
+        <source>New Page</source>
+        <target>__New Page</target>
+      </trans-unit>
+      <trans-unit id=".hnM_8g" resname="Create new Page">
+        <source>Create new Page</source>
+        <target>__Create new Page</target>
+      </trans-unit>
+      <trans-unit id="FQn1YfJ" resname="Save">
+        <source>Save</source>
+        <target>__Save</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

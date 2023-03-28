@@ -1,0 +1,67 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Formation index{% endblock %}
+
+
+{% block body %}
+
+    <h1>Formation index</h1>
+
+    {% for formation in formations %}
+    <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                {{ formation.name }}
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                <strong>Prix : {{ formation.price }} €</strong> <br>
+                Capacité : {{ formation.capacity }} <br>
+                Date de début : {{ formation.startDateTime ? formation.startDateTime|date('Y-m-d H:i:s') : '' }}<br>
+                Date de fin : {{ formation.endDateTime ? formation.endDateTime|date('Y-m-d H:i:s') : '' }}<br>
+                <br>Créer le {{ formation.createdAt ? formation.createdAt|date('Y-m-d H:i:s') : '' }}
+            </div>
+          </div>
+        </div>
+    </div>
+    {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+    {% endfor %}
+
+
+    <!--<table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Capacity</th>
+                <th>Price</th>
+                <th>CreatedAt</th>
+                <th>StartDateTime</th>
+                <th>EndDateTime</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for formation in formations %}
+            <tr>
+                <td>{{ formation.name }}</td>
+                <td>{{ formation.capacity }}</td>
+                <td>{{ formation.price }}</td>
+                <td>{{ formation.createdAt ? formation.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ formation.startDateTime ? formation.startDateTime|date('Y-m-d H:i:s') : '' }}</td>
+                <td>{{ formation.endDateTime ? formation.endDateTime|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>-->
+{% endblock %}
