@@ -11,6 +11,9 @@
             <link rel="stylesheet" href="starter-template.css">
             <link rel="stylesheet" href="navbar-fixed.css">
             <link rel="stylesheet" href="style.css">
+            <link href="/css/fontawesome.css" rel="stylesheet">
+            <link href="/css/brands.css" rel="stylesheet">
+            <link href="/css/solid.css" rel="stylesheet">
         {% endblock %}
 
         {% block javascripts %}
@@ -21,26 +24,26 @@
     <body>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">FC-PRO</a>
+              <a class="navbar-brand" href="#">FCPRO</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/page/1">🏠 {{ 'Home' |trans}}</a>
+                    <a class="nav-link active" aria-current="page" href="/page/11"> {{ 'Home' |trans}}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/formation/catalog"> 📰 {{ 'Our formation' |trans}}</a>
+                    <a class="nav-link" href="/formation/catalog">  {{ 'Our formation' |trans}}</a>
                   </li>
                   {%if is_granted('ROLE_ADMIN')%}
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      📃 {{ 'Pages' |trans}}
+                       {{ 'Pages' |trans}}
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="/page/">{{ 'Page List' |trans}}</a></li>
-                      <li><a class="dropdown-item" href="#">➕ {{ 'Create Page' |trans}}</a></li>
+                      <li><a class="dropdown-item" href="#"> {{ 'Create Page' |trans}}</a></li>
                     </ul>
                   </li>
                   {%endif%}
@@ -58,11 +61,11 @@
                   {%if is_granted('ROLE_ADMIN')%}
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      💫 {{ 'Formations' |trans}}
+                       {{ 'Formations' |trans}}
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="/formation">{{ 'Formations Index' |trans}}</a></li>
-                      <li><a class="dropdown-item" href="/formation/new">➕ {{ 'Create new formation' |trans}}</a></li>
+                      <li><a class="dropdown-item" href="/formation/new"><i class="fa-solid fa-plus fa-shake"></i> {{ 'Create new formation' |trans}}</a></li>
                     </ul>
                   </li>
                   {%endif%}
@@ -70,7 +73,7 @@
                 <ul class="navbar-nav align-right">
                   <li class="nav-item">
                     {%if app.user%}
-                    <a class="nav-link" href="/logout">❌ {{ 'LogOut' |trans}}</a>
+                    <a class="nav-link" href="/logout"> {{ 'LogOut' |trans}}</a>
                     {%else%}
                     <a class="nav-link" href="/login">➡ {{ 'LogIn' |trans}}</a>
                     {%endif%}
@@ -90,7 +93,7 @@
                 {% block body %}{% endblock %}
             </main>
             <footer class="pt-5 my-5 text-muted border-top">
-              Created by Alexandre Pain 🍭 &middot; &copy; 2023
+              Created by SIO1 <i class="fa-solid fa-robot fa-bounce"></i> &middot; <i class="fa-sharp fa-regular fa-copyright fa-fade"></i> 2023
             </footer>
           </div>
     </body>

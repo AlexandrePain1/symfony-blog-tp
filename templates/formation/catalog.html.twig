@@ -24,7 +24,8 @@
                 Capacité : {{ formation.capacity }} <br>
                 Date de début : {{ formation.startDateTime ? formation.startDateTime|date('Y-m-d H:i:s') : '' }}<br>
                 Date de fin : {{ formation.endDateTime ? formation.endDateTime|date('Y-m-d H:i:s') : '' }}<br>
-                <br>Créer le {{ formation.createdAt ? formation.createdAt|date('Y-m-d H:i:s') : '' }}
+                <br>
+                <a class="btn btn-primary" href="/formation/pdf/{{ formation.id }}">{{ 'Download PDF'|trans }}</a>
             </div>
           </div>
         </div>

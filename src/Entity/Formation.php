@@ -40,6 +40,9 @@ class Formation
     #[ORM\Column(nullable: true)]
     private ?\DateTimeImmutable $endDateTime = null;
 
+    #[ORM\Column(type: Types::TEXT, nullable: true)]
+    private ?string $content = null;
+
 
     public function getId(): ?int
     {
@@ -138,6 +141,18 @@ class Formation
     public function setEndDateTime(?\DateTimeImmutable $endDateTime): self
     {
         $this->endDateTime = $endDateTime;
+
+        return $this;
+    }
+
+    public function getContent(): ?string
+    {
+        return $this->content;
+    }
+
+    public function setContent(?string $content): self
+    {
+        $this->content = $content;
 
         return $this;
     }
