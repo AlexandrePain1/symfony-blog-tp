@@ -92,7 +92,7 @@ Site Web : <span class="link">https://ndlpavranches.fr/fc-pro/</span><br>
 <u>Dates</u> : '. $formation->getStartDateTime()->format('d/m/Y') .' à '. $formation->getEndDateTime()->format('d/m/Y') .'<br>
 <u>Lieu</u> : ..
 <br><br>
-Nombre de stagiaires minimal : 0 – Nombre de stagiaires maximal : 0<br>
+Nombre de stagiaires minimal : 0 – Nombre de stagiaires maximal : '. $formation->getCapacity() .'<br>
 <i>Si le minimum requis de participants n’est pas atteint la session de formation
 ne pourra avoir lieu.</i>
 <br><br>
