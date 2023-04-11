@@ -25,6 +25,8 @@ class FormationController extends AbstractController
         $pdf->SetFont('times', '', 14);
         $pdf->setCellPaddings(1, 1, 1, 1);
         $pdf->setCellMargins(1, 1, 1, 1);
+        $pdf->setPrintHeader(false);
+        $pdf->setPrintFooter(false);
 
         $pdf->AddPage();
 
@@ -32,6 +34,7 @@ class FormationController extends AbstractController
         $pdf->SetFont('helvetica', 'B', 20);
         $pdf->SetFillColor(160,222,255);
         $pdf->SetTextColor(0, 63,144);
+        $pdf->Image('images/fcpro.jpg', 10, 10, 37, 35, 'JPG', 'https://fcpro-apain.bts.sio-ndlp.fr/', '', true, 150, '', false, false, 0, false, false, false);
         $pdf->MultiCell(187, 20, "PROGRAMME DE FORMATION", 0, 'C', 1, 1, '', '', true, 0, false, true, 20, 'M');
 
         $pdf->SetFont('helvetica', 'B', 17);
@@ -71,7 +74,7 @@ OF certifié QUALIOPI pour les actions de formations<br>
 Site Web : <span class="link">https://ndlpavranches.fr/fc-pro/</span><br>
         </p>';
 
-        $pdf->SetFont('helvetica', '', 12);
+        $pdf->SetFont('helvetica', '', 11);
         $pdf->SetFillColor(225,225,230);
         $pdf->writeHTMLCell(65, 230, "", "", $textg, 0, 0, 1, true, '', true);
 
@@ -83,9 +86,36 @@ Site Web : <span class="link">https://ndlpavranches.fr/fc-pro/</span><br>
         <b>Prérequis necessaire / public visé</b>
         <hr>
         <ul><li>Prérequis...</li><li>Prérequis...</li></ul>
+        <b>Modalités d\'accès et d\'inscription</b>
+        <hr><br>
+        <div>
+<u>Dates</u> : ..<br>
+<u>Lieu</u> : ..
+<br><br>
+Nombre de stagiaires minimal : 0 – Nombre de stagiaires maximal : 0<br>
+<i>Si le minimum requis de participants n’est pas atteint la session de formation
+ne pourra avoir lieu.</i>
+<br><br>
+
+<b>Le chef d’établissement doit inscrire ses personnels auprès de FC PRO
+(contact par mail ou par téléphone) au plus tard 7 jours avant le début de
+la formation et faire la demande de prise en charge (sur OPCABOX pour
+le personnel OGEC, auprès de FORMIRIS pour le personnel enseignant)
+au plus tard 15 jours avant la date de début de la formation. L’inscription
+des personnels enseignants sur FORMIRIS devra se faire 7 jours avant
+la date de début de formation.</b></div><br>
+<b>Moyens pédagogiques et techniques</b>
+        <hr><br>
+        <div>Supports visuels (power-point), apports théoriques et mises en situation.</div><br>
+        <b>Modalité d\'évaluation</b>
+        <hr><br>
+        <div>Questionnaire de positionnement en début de formation + recueil des attentes
+des participants.
+Questionnaire d’évaluation des connaissances acquises en fin de formation.
+Evaluation de satisfaction de la formation par les stagiaires.</div>
         </p>';
 
-        $pdf->SetFont('helvetica', '', 14);
+        $pdf->SetFont('helvetica', '', 10);
         $pdf->SetFillColor(255,255,255);
         $pdf->writeHTMLCell(120, 230, "", "", $textd, 0, 0, 1, true, '', true);
 
