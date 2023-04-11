@@ -89,7 +89,7 @@ Site Web : <span class="link">https://ndlpavranches.fr/fc-pro/</span><br>
         <b>Modalités d\'accès et d\'inscription</b>
         <hr><br>
         <div>
-<u>Dates</u> : '. $formation->getStartDateTime()->format('d/m/Y') .'<br>
+<u>Dates</u> : '. $formation->getStartDateTime()->format('d/m/Y') .' à '. $formation->getEndDateTime()->format('d/m/Y') .'<br>
 <u>Lieu</u> : ..
 <br><br>
 Nombre de stagiaires minimal : 0 – Nombre de stagiaires maximal : 0<br>
